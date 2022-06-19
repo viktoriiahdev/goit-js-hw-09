@@ -28,8 +28,8 @@ function onFormSubmit(e) {
     elements: { delay, step, amount },
   } = e.target;
 
-  delayValue = Number(delay.value);
-  stepValue = Number(step.value);
+  const delayValue = Number(delay.value);
+  const stepValue = Number(step.value);
 
   for (let i = 1, delay = delayValue; i <= amount.value; i += 1, delay += stepValue) {
     setTimeout(() => {
